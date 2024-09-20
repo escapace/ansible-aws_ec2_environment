@@ -1,5 +1,0 @@
----
-# tasks file for escapace.aws_environment
-
-- ansible.builtin.include_tasks: environment.yml
-  when: ansible_os_family == "RedHat" and provider is defined and provider == "ec2"

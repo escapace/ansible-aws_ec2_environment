@@ -1,2 +1,4 @@
 ---
 # defaults file for escapace.aws_environment
+
+aws_environment_role_debug: false

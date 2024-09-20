@@ -3,6 +3,7 @@
   ansible.builtin.dnf:
     name: "{{ packages }}"
     state: present
+    allowerasing: true
   vars:
     packages:
       - jq
@@ -41,3 +42,4 @@
   ansible.builtin.service:
     name: ec2-environment
     enabled: true
+  when: not aws_environment_role_debug|bool
